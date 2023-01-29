@@ -3,11 +3,13 @@ package ru.netology.repository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.netology.domain.FastTicketComparator;
 import ru.netology.domain.Ticket;
 
 public class TicketRepositoryTest {
 
     TicketRepository repository = new TicketRepository();
+
 
     Ticket ticket1 = new Ticket(1, 3710, "DME", "OVB", 245);// Домодедово - Новосибирск
     Ticket ticket2 = new Ticket(2, 2200, "VKO", "KZN", 95);
@@ -41,6 +43,5 @@ public class TicketRepositoryTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
-
 
 }

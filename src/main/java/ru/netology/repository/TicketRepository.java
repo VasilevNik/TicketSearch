@@ -1,8 +1,13 @@
 package ru.netology.repository;
 
+import ru.netology.domain.FastTicketComparator;
 import ru.netology.domain.Ticket;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class TicketRepository {
+
     private Ticket[] tickets = new Ticket[0];
 
     public void add(Ticket ticket) {
